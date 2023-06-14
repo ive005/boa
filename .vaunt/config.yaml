@@ -9,14 +9,3 @@ achievements:
             actor: author
             action: star
             condition: starred = true
-            operator: "&"
-        - trigger:
-            actor: author
-            action: issue
-            condition: labels in ['enhancement']
-            operator: "|"
-        - trigger: 
-            actor: reviewers
-            action: pull_request
-            condition: count() > 1
-            operator: '|'
